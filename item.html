@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chocolaterie Lavaux </title>
+    <link rel="icon" type="image/x-icon" href="image/logo.ico">
+
+
+    <!-- <link href="../../fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/b5d68417cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/addtoCartSearchFilter.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <title>Price Filter, Search and Add to Cart</title>
+</head>
+
+<body>
+    <nav>
+        <a href="home.html" class="logo"><img class="logo" src="image/b_logo.png"></a>
+        <input type="search" name="search" id="searchBar" placeholder="search products...">
+        <p class="category">Cart</p>
+        <!-- Cart Icon-->
+        <div class="carticonsp">
+            <img class="fa-cart-shopping" id="carticon" src="image/cart-73-64.png" alt="">
+            <span>Rs<p id="sumPrice">0</p></span>
+        </div>
+    
+    </nav>
+
+    <div class="categories hide">
+        <p class="cat">All</p>
+        <p class="cat">Featured</p>
+        <p class="cat">Motivational</p>
+        <p class="cat">Finance</p>
+    </div>
+
+    <div class="cartcont hide">
+        <div class="cart">
+            <div class="cancel">
+                <div class="wrapper"><img class="fa-xmark" src="image/pngaaa.com-28984.png" alt=""> </div>
+            </div>
+
+            <!-- Cart contents -->
+            <div class="productInCart">
+
+                <ul id="buyItems">
+                    <!-- unhide empty if cart is empty -->
+                    <h4 class="empty">Your shopping cart is empty</h4>
+
+           
+                    <!-- html to be return with string literals at appropriate places -->
+                    <!-- <li class="buyItem">
+                        <img src="cd.png">
+                        <div>
+                            <h5>Products Name</h5>
+                            <span class="dollar">Rs <p>Rs 100</p></span>
+                            <div>
+                                <button data-id = "1" class="minusBtn">-</button>
+                                <span class="countOfProduct">1</span>
+                                <button data-id = "1" class="plusBtn">+</button>
+                            </div>
+                        </div>
+                    </li>
+                    <hr> -->
+                    <!-- to be returned end -->
+                </ul>
+
+                <!-- display checkout if cart isnt empty-->
+                <!-- <button class="clearCartBtn checkout hide">Clear cart</button>
+                <button class="checkoutbtn checkout hide">Check out</button>
+                <button onclick="window.location.href='./Payment.html'">Go to Payment</button> -->
+                <button class="clearCartBtn checkout hide">Clear cart</button>
+                <button class="checkoutbtn checkout hide" onclick="navigateToPayment()">Check out</button>
+
+            </div>
+        </div>
+    </div>
+
+    <h1><span class="header">Products</span></h1>
+
+
+    <div class="sort">
+        <p>Sort: </p>
+        <ul>
+            <li class="filter all">All Products</li>
+            <li class="filter low">lowest - Highest Price</li>
+            <li class="filter high">Highest - lowest Price</li>
+        </ul>
+    </div>
+    
+    <div class="container productsCont">
+        <div class="products motivational featured">
+            <img src="image/donuts.jpg" alt="">
+            <p class="productName" on>Doughnuts</p>
+            <hr>
+            <p>Freshly baked, golden brown doughnuts with a light and fluffy texture, coated in a variety of toppings.</p>
+            <hr>
+            <span>Rs <p class="productPrice">400</p></span>
+            <button class="addToCart" data-product-id ="1">Add to Cart</button>
+        </div>
+        <div class="products finance featured">
+            <img src="image/chocolate-cake.jpg" alt="">
+            <p class="productName">Chocolate Cake</p>
+            <hr>
+            <p>Indulge in our rich and decadent chocolate cake, made with premium cocoa powder and layered with smooth chocolate ganache.</p>
+            <hr>
+            <span>Rs <p class="productPrice">900</p></span>
+            <button class="addToCart" data-product-id ="2">Add to Cart</button>
+        </div>
+        <div class="products motivational featured">
+            <img src="image/baguette.jpg" alt="">
+            <p class="productName">Baguette</p>
+            <hr>
+            <p>Savor the crisp crust and chewy interior of our authentic French baguette, freshly baked to perfection.</p>
+            <hr>
+            <span>Rs <p class="productPrice">200</p></span>
+            <button class="addToCart" data-product-id ="3">Add to Cart</button>
+        </div>
+        <div class="products finance">
+            <img src="image/red velvet cake.jpg" alt="">
+            <p class="productName">Red Velvet Pastry</p>
+            <hr>
+            <p>Experience a rich, velvety texture and a hint of cocoa in every bite of our classic red velvet pastry.</p>
+            <hr>
+            <span>Rs<p class="productPrice">200</p></span>
+            <button class="addToCart" data-product-id ="4">Add to Cart</button>
+        </div>
+
+
+        <div class="products motivational featured">
+            <img src="image/chocolate-chip-cookies.jpg" alt="">
+            <p class="productName" on>Chocolate Chip Cookies</p>
+            <hr>
+            <p>Indulge in our classic chocolate chip cookies, baked to a golden brown with a chewy texture and loaded with chunks of rich chocolate .</p>
+            <hr>
+            <span>Rs<p class="productPrice">150</p></span>
+            <button class="addToCart" data-product-id ="5">Add to Cart</button>
+        </div>
+        <div class="products finance featured">
+            <img src="image/cup cakes.jpg" alt="">
+            <p class="productName">Cup Cakes</p>
+            <hr>
+            <p>Enjoy a bite-sized delight of our fluffy and moist cupcakes, topped with a variety of creamy frostings.</p>
+            <hr>
+            <span>Rs<p class="productPrice">200</p></span>
+            <button class="addToCart" data-product-id ="6">Add to Cart</button>
+        </div>
+        <div class="products motivational featured">
+            <img src="image/croissant.jpg" alt="">
+            <p class="productName">Croissant</p>
+            <hr>
+            <p>Savor the buttery and flaky layers of our freshly baked croissants, made with premium ingredients and crafted to perfection.</p>
+            <hr>
+            <span>Rs<p class="productPrice">300</p></span>
+            <button class="addToCart" data-product-id ="7">Add to Cart</button>
+        </div>
+        <div class="products finance">
+            <img src="image/Top2.jpg" alt="">
+            <p class="productName">Macaroon</p>
+            <hr>
+            <p>Treat yourself to our delicate and colorful macarons, made with ground almonds and filled with a variety of decadent flavors.</p>
+            <hr>
+            <span>Rs<p class="productPrice">400</p></span>
+            <button class="addToCart" data-product-id ="8">Add to Cart</button>
+        </div>
+    </div>
+  
+    
+
+    <script src="js/filter.js"></script>
+    <script src="js/script1.js"></script>
+    
+    <!-- <script src="js/search.js"></script> -->
+    <!-- <script src="js/addtocart.js"></script> -->
+    <!-- <script src="js/category.js"></script> -->
+</body>
+
+</html>

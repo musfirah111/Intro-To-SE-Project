@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+   
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Chocolaterie Lavaux </title>
+            <link rel="icon" type="image/x-icon" href="image/logo.ico">
+    
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css">
+        
+      
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+    
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="css/jquery.timepicker.css">
+    
+        
+    
+        <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/style1.css">
+      </head>
+      <body data-spy="scroll" data-target="#ftco-navbar" data-offset="200">
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+  <a href="home.html" class="logo"><img class="logo" src="image/b_logo.png"></a>
+  <a class = "name"> <b><h2>Chocolaterie Lavaux</h2></b> </a> 
+
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="Catagory.html">Catagory</a>
+        <a href="about.html">About</a>
+        <a href="review.html">Review</a>
+        <a href="TopSellers.html">Top Sellers</a>
+        <a href="Payment.html">Payment</a>
+        <a href="item.html">Items</a>
+    </nav>
+
+    <div class="icons">
+      <div id="search-filter-btn" class="fas fa-bars"></div>
+      <div id="search-btn" class="fas fa-search"></div>
+      <a href="login_Register.html"><div id="login-btn" class="fas fa-user"></div></a>
+  </div>
+
+  <form action="" class="search-form">
+      <input type="search" placeholder="search here..." id="search-box">
+      <label for="search-box" class="fas fa-search"></label>
+  </form>
+
+  <div class="search-filter">
+      <div class="box">
+          <h1>Filter Products</h1>
+          <br><br>
+          <form class="product-type">
+              <input class="radio" type="checkbox">
+            <label class="product-type-heading" for="product-type-select">Product Type:</label>
+            <br><br>
+
+            <input class="radio" type="checkbox">
+            <label for="diet-select">Dietary Restrictions:</label>
+            <br><br>
+            
+            <input class="radio" type="checkbox">
+            <label for="ingredients-select">Ingredients:</label>
+            <br><br>
+            
+            <input class="radio" type="checkbox">
+            <label for="price-select">Price Range:</label>
+            <br><br>
+            
+            <input class="radio" type="checkbox">
+            <label for="rating-select">Rating:</label>
+            <br><br>
+            
+            <input class="radio" type="checkbox">
+            <label for="flavors-select">Flavors:</label>
+
+            <br><br>
+          </form>
+        </div>
+      </div>
+
+</header>
+<!-- header section ends -->
+
+<section class="home">
+
+    <div class="slides-container">
+
+        <div class="slide active">
+            <div class="content">
+                <span>fresh and organic</span>
+                <h3>upto 30% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/home1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>fresh and organic</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/home2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>fresh and organic</span>
+                <h3>upto 40% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/home3.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+    <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+
+</section>
+
+<section class="banner-container">
+
+    <div class="banner">
+        <img src="image/banner1.jpg" alt="">
+        <div class="content">
+            <span>limited sales</span>
+            <h3>upto 30% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/banner2.jpg" alt="">
+        <div class="content">
+            <span>limited sales</span>
+            <h3>upto 50% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/banner3.jpg" alt="">
+        <div class="content">
+            <span>limited sales</span>
+            <h3>upto 40% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<body data-spy="scroll" data-target="#ftco-navbar" data-offset="200">
+    
+   
+
+    <section class="ftco-cover" style="background-image: url(image/Home5.jpg);" id="section-home">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center ftco-vh-100">
+          <div class="col-md-12">
+            <h1 class="ftco-heading ftco-animate mb-3">Welcome To Chocolaterie Lavaux</h1>
+            <h2 class="h5 ftco-subheading mb-5 ftco-animate">Experience the Decadent Delight</a></h2>    
+            <p><a href="https://free-template.co/" target="_blank" class="btn btn-outline-white btn-lg ftco-animate" data-toggle="modal" data-target="#reservationModal">Customization</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+    
+    <section class="ftco-section" id="section-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 ftco-animate mb-5">
+            <h4 class="ftco-sub-title">Our Story</h4>
+            <h2 class="ftco-primary-title display-4">Welcome</h2>
+            <p>Chocolaterie Lavaux is a boutique chocolate shop founded in 1985 by Swiss chocolatier, Henri Lavaux. Using only the finest quality cocoa beans and natural ingredients, Henri's artisanal approach to chocolate making quickly gained a loyal following.</p>
+
+            <p class="mb-4"> Today, the company remains committed to Henri's legacy of excellence and innovation, creating new and exciting chocolate creations that push the boundaries of taste and artistry. From signature truffles to indulgent pastries and desserts, Chocolaterie Lavaux invites customers to experience unparalleled quality and decadence.</p>
+            <p><a href="#" class="btn btn-secondary btn-lg">Our Story</a></p>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-6 ftco-animate img" data-animate-effect="fadeInRight">
+            <img src="image/chef.jpg" alt="Free Template by Free-Template.co">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+    
+
+    <section class="ftco-section bg-light" id="section-offer">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-12 text-center mb-5 ftco-animate">
+            <h4 class="ftco-sub-title">Our Offers</h4>
+            <h2 class="display-4">Offers &amp; Promos</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-7">
+                <p class="lead">Always keeping you updated of the Promotions and Offers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-carousel ftco-owl">
+
+              <div class="item">
+                <div class="media d-block mb-4 text-center ftco-media ftco-animate border-0">
+                  <img src="image/chocolate-cake.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+                  <div class="media-body p-md-5 p-4">
+                    <h5 class="text-primary">Rs900</h5>
+                    <h5 class="mt-0 h4">Chocolate Cake</h5>
+                    <p class="mb-4">Indulge in our rich and decadent chocolate cake, made with premium cocoa powder and layered with smooth chocolate ganache.</p>
+
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="media d-block mb-4 text-center ftco-media ftco-animate border-0">
+                  <img src="image/baguette.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+                  <div class="media-body p-md-5 p-4">
+                    <h5 class="text-primary">Rs200</h5>
+                    <h5 class="mt-0 h4">Baguette</h5>
+                    <p class="mb-4">Savor the crisp crust and chewy interior of our authentic French baguette, freshly baked to perfection..</p>
+
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="item">
+                <div class="media d-block mb-4 text-center ftco-media ftco-animate border-0">
+                  <img src="image/chocolate-chip-cookies.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+                  <div class="media-body p-md-5 p-4">
+                    <h5 class="text-primary">Rs150</h5>
+                    <h5 class="mt-0 h4">Chocolate Chip Cookies</h5>
+                    <p class="mb-4">Indulge in our classic chocolate chip cookies, baked to a golden brown with a chewy texture and loaded with chunks of rich chocolate..</p>
+
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="media d-block mb-4 text-center ftco-media ftco-animate border-0">
+                  <img src="image/donuts.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+                  <div class="media-body p-md-5 p-4">
+                    <h5 class="text-primary">Rs400</h5>
+                    <h5 class="mt-0 h4">Doughnuts</h5>
+                    <p class="mb-4">Freshly baked, golden brown doughnuts with a light and fluffy texture, coated in a variety of toppings.</p>
+
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="media d-block mb-4 text-center ftco-media ftco-animate border-0">
+                  <img src="image/red velvet cake.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+                  <div class="media-body p-md-5 p-4">
+                    <h5 class="text-primary">Rs200</h5>
+                    <h5 class="mt-0 h4">Red Velvet Pastry</h5>
+                    <p class="mb-4">Experience a rich, velvety texture and a hint of cocoa in every bite of our classic red velvet pastry.</p>
+
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="item">
+                <div class="media d-block mb-4 text-center ftco-media ftco-animate border-0">
+                  <img src="image/Top3.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+                  <div class="media-body p-md-5 p-4">
+                    <h5 class="text-primary">Rs 300</h5>
+                    <h5 class="mt-0 h4">Chocolate Rolls</h5>
+                    <p class="mb-4">Ultimate dessert for chocolate lovers</p>
+
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="media d-block mb-4 text-center ftco-media ftco-animate border-0">
+                  <img src="image/cup cakes.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+                  <div class="media-body p-md-5 p-4">
+                    <h5 class="text-primary">Rs 200</h5>
+                    <h5 class="mt-0 h4">Cup Cakes</h5>
+                    <p class="mb-4">Enjoy a bite-sized delight of our fluffy and moist cupcakes, topped with a variety of creamy frostings.</p>
+
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="media d-block mb-4 text-center ftco-media ftco-animate border-0">
+                  <img src="image/Top2.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+                  <div class="media-body p-md-5 p-4">
+                    <h5 class="text-primary">Rs 400</h5>
+                    <h5 class="mt-0 h4">Macaroon</h5>
+                    <p class="mb-4">Treat yourself to our delicate and colorful macarons, made with ground almonds and filled with a variety of decadent flavors.</p>
+
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="item">
+                <div class="media d-block mb-4 text-center ftco-media ftco-animate border-0">
+                  <img src="image/croissant.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+                  <div class="media-body p-md-5 p-4">
+                    <h5 class="text-primary">Rs 300</h5>
+                    <h5 class="mt-0 h4">Croissant</h5>
+                    <p class="mb-4">Savor the buttery and flaky layers of our freshly baked croissants, made with premium ingredients and crafted to perfection.</p>
+
+                    <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Order Now!</a></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <section class="ftco-section bg-light" id="section-news">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-12 text-center mb-5 ftco-animate">
+            <h2 class="display-4">News &amp; Events</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-7">
+                <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="media d-block mb-4 text-center ftco-media ftco-animate">
+              <img src="image/Top5.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+              <div class="media-body p-md-5 p-4">
+                <h5 class="mt-0 h4">Launching Lemon Cupcakes</h5>
+                <p class="mb-4">Our lemon cupcakes are a citrusy delight, made with a fluffy and moist lemon-infused cake base, and topped with a tangy yet sweet lemon buttercream frosting. Each bite of these delightful cupcakes is bursting with bright and zesty flavors, making them the perfect treat for any occasion.</p>
+
+                <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="media d-block mb-4 text-center ftco-media ftco-animate">
+              <img src="image/Top1.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+              <div class="media-body p-md-5 p-4">
+                <h5 class="mt-0 h4">Chef Special Menu</h5>
+                <p class="mb-4">The chef's special menu at Chocolaterie Lavaux includes a delectable mini version of our classic red velvet cake, made with premium ingredients and layered with smooth cream cheese frosting. The mini cake is the perfect indulgence for those who want to satisfy their sweet tooth without overindulging, and it's also ideal for sharing with friends and family.                </p>
+
+                <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="media d-block mb-4 text-center ftco-media ftco-animate">
+              <img src="image/gallery5.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+              <div class="media-body p-md-5 p-4">
+                <h5 class="mt-0 h4">Make Your Own Bundle</h5>
+                <p class="mb-4">Customers can select a combination of products from a set of available options, such as chocolates, pastries, cookies, or other treats, and create a bundle that suits their taste and budget. This allows customers to personalize their purchase and try out different products, while also receiving a special offer or discount on their customized bundle.</p>
+
+                <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <section class="ftco-section" id="section-gallery">
+      <div class="container">
+        <div class="row ftco-custom-gutters">
+
+          <div class="col-md-12 text-center mb-5 ftco-animate">
+            <h2 class="display-4">Food Gallery</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-7">
+                <p class="lead">Experience the World of Flavour at Our Food Gallery</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 ftco-animate">
+            <a href="image/donuts.jpg" class="ftco-thumbnail image-popup">
+              <img src="image/donuts.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <a href="image/croissant.jpg" class="ftco-thumbnail image-popup">
+              <img src="image/croissant.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <a href="image/baguette.jpg" class="ftco-thumbnail image-popup">
+              <img src="image/baguette.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+            </a>
+          </div>
+
+          <div class="col-md-4 ftco-animate">
+            <a href="image/cup cakes.jpg" class="ftco-thumbnail image-popup">
+              <img src="image/cup cakes.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <a href="image/chocolate-chip-cookies.jpg" class="ftco-thumbnail image-popup">
+              <img src="image/chocolate-cake.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <a href="image/chocolate-chip-cookies.jpg" class="ftco-thumbnail image-popup">
+              <img src="image/chocolate-chip-cookies.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <section class="ftco-section bg-light" id="section-contact">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 text-center mb-5 ftco-animate">
+            <h2 class="display-4">Contact Us</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-7">
+                <p class="lead">24/7 Customer Serive is Available</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md mb-5 ftco-animate">
+            <form action="" method="post">
+              <div class="form-group">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label for="email" class="sr-only">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="message" class="sr-only">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Write your message"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-lg" value="Send Message">
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- END section -->
+    
+
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-4 bg-image" style="background-image: url(image/custom.jpg);"></div>
+              <div class="col-lg-8 p-5">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <small>CLOSE </small><span aria-hidden="true">&times;</span>
+                </button>
+                <h1 class="mb-4">Customize Your Order</h1>  
+                <form action="#" method="post">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label for="m_fname">Product</label>
+                      <input type="text" class="form-control" id="m_fname">
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label for="m_lname">Name</label>
+                      <input type="text" class="form-control" id="m_lname">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <label for="m_email">Email</label>
+                      <input type="email" class="form-control" id="m_email">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label for="m_people">How Many People</label>
+                      <select name="" id="m_people" class="form-control">
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4+">4+ People</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label for="m_phone">Phone</label>
+                      <input type="text" class="form-control" id="m_phone">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label for="m_date">Deliver Date</label>
+                      <input type="text" class="form-control" id="m_date">
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label for="m_time">Deliver Time</label>
+                      <input type="text" class="form-control" id="m_time">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <label for="m_message">Custom Details</label>
+                      <div>
+                        <textarea name="topping" id="m_message" cols="8" rows="2" class="form-control">toppers: </textarea>
+                      </div>
+                      <div>
+                        <textarea name="size" id="m_message" cols="8" rows="2" class="form-control">size: </textarea>
+                      </div>
+                      <div>
+                        <textarea name="frosting" id="m_message" cols="8" rows="2" class="form-control">frosting: </textarea>
+                      </div>
+                      <div>
+                        <textarea name="filling" id="m_message" cols="8" rows="2" class="form-control">filling: </textarea>
+                      </div>
+                      <div>
+                        <textarea name="color code" id="m_message" cols="8" rows="2" class="form-control">colour code: </textarea>
+                      </div>
+                      <div>
+                        <textarea name="nutrition" id="m_message" cols="8" rows="2" class="form-control">Dietary and Nutritions: </textarea>
+                      </div>
+                      <textarea class="form-control" id="m_message" cols="30" rows="5"></textarea>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <input type="submit" class="btn btn-primary btn-lg btn-block" value="Order Now">
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END Modal -->
+
+    <!-- loader -->
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    
+    <script src="js/jquery.animateNumber.min.js"></script>
+    
+
+   
+
+    <script src="js/main.js"></script>
+
+    
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="home.html"> <i class="fas fa-arrow-right"></i> Home</a>
+          <a href="Catagory.html"> <i class="fas fa-arrow-right"></i> Catagory</a>
+          <a href="about.html"> <i class="fas fa-arrow-right"></i> About</a>
+          <a href="review.html"> <i class="fas fa-arrow-right"></i> Review</a>
+          <a href="TopSellers.html"> <i class="fas fa-arrow-right"></i> Top Sellers</a>
+          <a href="Payment.html"> <i class="fas fa-arrow-right"></i> Payment</a>
+      </div>
+
+      <div class="box">
+          <h3>extra links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> my favorite </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> terms or use </a>
+      </div>
+
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+          <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+      </div>
+
+      <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+              <input type="email" placeholder="enter your email">
+              <input type="submit" value="subscribe" class="btn">
+          </form>
+          <img src="image/payment.png" class="payment" alt="">
+      </div>
+
+  </div>
+
+</section>
+
+<section class="credit">created by Ms Musfirah Zunnoon, Ms Noor Fatima, Mr Muneeb-ur-Rehman, Mr Muhammad Ghaus | all rights reserved!</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

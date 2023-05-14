@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  background: linear-gradient(0,0,0,0.4);
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.logo
+{
+    width: 40px;
+    height: 40px;
+    bottom: 80%;
+    right: 90%;
+    position:absolute;
+}
+
+.name
+{
+  text-align:left;
+  color: #f2aeae;
+  font-size: 1rem;
+  position:absolute;
+  bottom: 98%;
+}
+.col
+{
+    width: 10%;
+    height: 20%;
+    position: relative;
+    margin: 12.5% auto;
+    padding: 5px;
+}
+
+.bgvideo
+{
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-raito: 16/9)
+{
+    .bgvideo
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-raito: 16/9)
+{
+    .bgvideo
+    {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+.pay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: (0,0,0,0.7);
+  padding:25px;
+  min-height: 100vh;
+  
+}
+
+.pay form{
+  padding:30px;
+  width:700px;
+  background: linear-gradient(to right, #8B2929, 0.7);
+  box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+
+.pay form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.pay form .row .col{
+  flex:1 1 250px;
+}
+
+.pay form .row .col .title{
+  font-size: 20px;
+  color:#e4d3d3;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.pay form .row .col .inputBox{
+    color: #e4d3d3;
+  margin:15px 0;
+}
+
+.pay form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.pay form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid  rgba(139, 41, 41, 0.71);
+  background: transparent;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.pay form .row .col .inputBox input:focus{
+  
+  border:1px solid #000;
+}
+
+.pay form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.pay form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.pay form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.pay form .submit-btn{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background:#e4d3d3;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+.pay form .submit-btn:hover{
+  background: #9b5050;
+}
